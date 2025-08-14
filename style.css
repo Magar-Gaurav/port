@@ -265,7 +265,9 @@ footer > a:hover {
 .my_works{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 2rem;
+    margin: 0 20px;
 }
 .work{
     overflow: hidden;
@@ -276,8 +278,8 @@ footer > a:hover {
 }
 video{
     display: block;
-    width: 35rem;
-    height: 35rem;
+    width: 25rem;
+    height: 25rem;
     object-fit: cover;
     /* margin-bottom: -200px; */
     overflow: hidden;
@@ -324,6 +326,10 @@ video{
     .navbar-toggle.active .bar:nth-child(2) { opacity: 0; }
     .navbar-toggle.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
     .navbar-toggle.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+    .my_works{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* Smaller devices */
