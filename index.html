@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Sandesh-Magar</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Typed.js CDN in the <head> or before your script -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- fontawesome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">Sandesh Magar</a>
+            <button class="navbar-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="navbar-menu">
+                <li><a href="#section1">Home</a></li>
+                <li><a href="#section2">Social Pages</a></li>
+                <li><a href="#section3">Contact me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main contents -->
+    <main>  
+        <div class="breaker" id="section1"></div>
+        <section>
+                <h2 class="h_two">Hello Everyone, I'm <span class="auto-type" style="color: yellowgreen;"></span></h2>
+                <br>
+                <div class="breaker"></div>
+                <div class="logo_collection">
+                    <div class="logo">
+                        <img src="./logo.jpeg" alt="logo">
+                    </div>
+                </div>
+                <!-- p tags -->
+                <div class="my_text">
+                    <p style="font-size: 2rem; font-weight: 600;">
+                        I'm Sandesh, a +2 graduated from  <span  style="color: greenyellow;">Gyanodaya Secondary School</span>. I'm learning languages and basic web development and improving my skills.
+                    </p>
+                    
+                    <p style="font-size: 2rem; font-weight: 600;">
+                        Outside of academics, I enjoy gaming, traveling, and listening to music.
+                    </p>
+                </div>
+                <!-- icon block -->
+                <div class="flex w-fit mx-auto mt-[50px] gap-8 sm:gap-15 text-[#588061] text-2xl sm:text-4xl md:text-6xl cursor-pointer">
+                    <a href="https://www.facebook.com/hackers.eyes.756" target="_blank"><i class="fa-brands fa-facebook-f hover:text-[#A5D6B0] shad"></i></a>
+                    <a href="https://www.instagram.com/gourav_mgar/" target="_blank"><i class="fa-brands fa-instagram  hover:text-[#A5D6B0] shad"></i></a>
+                    <a href="https://www.linkedin.com/in/magar-gourav-156b052a5/" target="_blank"><i class="fa-brands fa-linkedin-in  hover:text-[#A5D6B0] shad"></i></a>
+                    <a href="https://github.com/Magar-Gaurav" target="_blank"><i class="fa-brands fa-github  hover:text-[#A5D6B0] shad"></i></a>
+                </div>
+        </section>
+        <div class="breaker" id="section2"></div>
+        <section class="collect" > 
+            <div class="collection youtube">
+                <a href="https://www.youtube.com/@yusukesr56" style="text-decoration: none;">
+                    <i class="fa-brands fa-youtube" style="color: white;"></i>
+                    <p>This is my youtube channel.<br>Subscribe it😉.</p>
+                </a>
+            </div>
+            <div class="collection facebook">
+                <a href="https://www.facebook.com/search/top?q=sandesh%20magar" style="text-decoration: none;">
+                    <i class="fa-brands fa-facebook" style="color: white;"></i>
+                    <p>This is my facebook page. You can contact me here.</p>
+                </a>
+            </div>
+            <div class="collection instagram">
+                <a href="https://www.instagram.com/sandeshh_mgrx/" style="text-decoration: none;">
+                    <i class="fa-brands fa-instagram instagram-icon" style="color: white;"></i>
+                    <p style="text-shadow: 1px 1px 2px rgba(0,0,0,0.5); color:white;">This is my youtube channel</p>
+                </a>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer contents -->
+    <div class="breaker" id="section3"></div>
+    <footer>
+        <a href="mailto:msandesh577@gmail.com" target="_blank" >Mail me </a>
+        <p>&copy; 2025  Sandesh Magar</p>
+    </footer>
+
+    <!-- Auto type script for auto typing -->
+    <script>
+        var typed =new Typed(".auto-type",{
+          strings: ["Sandesh Magar"],
+          typeSpeed :150,
+          backSpeed :150,
+          loop :true
+        });
+    </script>
+</body>
+
+<script src="script.js"></script>
+
+</html>
