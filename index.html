@@ -5,15 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio | Sandesh-Magar</title>
-
+    <!-- google api -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=call_end" />
     <link rel="stylesheet" href="style.css">
     <!-- Include Typed.js CDN in the <head> or before your script -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <!-- fontawesome cdn -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <video autoplay muted loop class="bg-video">
+        <source src="./background.mp4" type="video/mp4">
+    </video>
     <!-- Navbar -->
     <nav class="navbar">
         <div class="navbar-container">
@@ -26,36 +33,38 @@
             <ul class="navbar-menu">
                 <li><a href="#section1">Home</a></li>
                 <li><a href="#section2">Social Pages</a></li>
+                <li><a href="#section">My Works</a></li>
                 <li><a href="#section3">Contact me</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Main contents -->
-    <main>  
+    <main>
         <div class="breaker" id="section1"></div>
         <section>
-                <h2 class="h_two">Hello Everyone, I'm <span class="auto-type" style="color: yellowgreen;"></span></h2>
-                <br>
-                <div class="breaker"></div>
-                <div class="logo_collection">
-                    <div class="logo">
-                        <img src="./logo.jpeg" alt="logo">
-                    </div>
+            <h2 class="h_two">Hello Everyone, I'm <span class="auto-type" style="color: yellowgreen;"></span></h2>
+            <br>
+            <div class="breaker"></div>
+            <div class="logo_collection">
+                <div class="logo">
+                    <img src="./logo.jpeg" alt="logo">
                 </div>
-                <!-- p tags -->
-                <div class="my_text">
-                    <p style="font-size: 2rem; font-weight: 600;">
-                        I'm Sandesh, a +2 graduated from  <span  style="color: greenyellow;">Gyanodaya Secondary School</span>. I'm learning languages and basic web development and improving my skills.
-                    </p>
-                    
-                    <p style="font-size: 2rem; font-weight: 600;">
-                        Outside of academics, I enjoy gaming, traveling, and listening to music.
-                    </p>
-                </div>
+            </div>
+            <!-- p tags -->
+            <div class="my_text">
+                <p style="font-size: 2rem; font-weight: 600;">
+                    I'm Sandesh, a +2 graduate from <span style="color: greenyellow;">Gyanodaya Secondary School</span>.
+                    I'm learning languages and basic web development and improving my skills.
+                </p>
+
+                <p style="font-size: 2rem; font-weight: 600;">
+                    Outside of academics, I enjoy gaming, traveling, and listening to music.
+                </p>
+            </div>
         </section>
         <div class="breaker" id="section2"></div>
-        <section class="collect" > 
+        <section class="collect">
             <div class="collection youtube">
                 <a href="https://www.youtube.com/@yusukesr56" style="text-decoration: none;">
                     <i class="fa-brands fa-youtube" style="color: white;"></i>
@@ -71,26 +80,48 @@
             <div class="collection instagram">
                 <a href="https://www.instagram.com/sandeshh_mgrx/" style="text-decoration: none;">
                     <i class="fa-brands fa-instagram instagram-icon" style="color: white;"></i>
-                    <p style="text-shadow: 1px 1px 2px rgba(0,0,0,0.5); color:white;">This is my youtube channel</p>
+                    <p style="text-shadow: 1px 1px 2px rgba(0,0,0,0.5); color:white;">This is my instagram page. Follow
+                        me.</p>
                 </a>
             </div>
         </section>
+        <div class="breaker" id="section" style="padding: 60px;"></div>
+        
+        <h2 style="font-size: 2.2rem;padding-bottom: 20px;">My little bit known works</h2>
+        <div class="my_works">
+            <a href="https://www.instagram.com/p/C606y3bJ5vy/">
+                <div class="work">
+                    <video autoplay muted loop class="work_video1">
+                        <source src="./work2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </a>
+            
+            <a href="https://www.instagram.com/p/C-uvZICsTou/">
+                <div class="work">
+                    <video autoplay muted loop class="work_video2">
+                        <source src="./work1.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </a>
+        </div>
     </main>
-    
+
     <!-- Footer contents -->
     <div class="breaker" id="section3"></div>
     <footer>
-        <a href="mailto:msandesh577@gmail.com" target="_blank" >Mail me </a>
-        <p>&copy; 2025  Sandesh Magar</p>
+        <a href="tel:9819221965"><span class="material-symbols-outlined">call_end</span> Call me</a>
+        <a href="mailto:msandesh577@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> Mail me </a>
+        <p>&copy; 2025 Sandesh Magar</p>
     </footer>
 
     <!-- Auto type script for auto typing -->
     <script>
-        var typed =new Typed(".auto-type",{
-          strings: ["Sandesh Magar"],
-          typeSpeed :150,
-          backSpeed :150,
-          loop :true
+        var typed = new Typed(".auto-type", {
+            strings: ["Sandesh Magar"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
         });
     </script>
 </body>
